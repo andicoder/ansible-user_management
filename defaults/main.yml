@@ -13,3 +13,4 @@ user_management:
 #     expires: -1                       <<< (Optional) User expiration date in Epoch format (default value "-1").
 #     create_home: yes                  <<< (Optional) Create home directory (default value "yes").
 #     system: no                        <<< (Optional) Create a system account (default value "no").
+#     passwd: password                  <<< (Optional) Set the users password (must be encrypted, see: https://docs.ansible.com/ansible/faq.html#how-do-i-generate-encrypted-passwords-for-the-user-module)

@@ -9,6 +9,7 @@
     system: "{{ item.system | default(false) | bool }}"
     expires: "{{ item.expires | default('-1') }}"
     comment: "{{ item.comment | default('') }}"
+    password: "{{ item.password | default('') }}"
   with_items: "{{ user_management }}"
   loop_control:
     label: "{{ item.name }}"
