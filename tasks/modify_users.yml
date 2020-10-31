@@ -10,7 +10,7 @@
     expires: "{{ item.expires | default('-1') }}"
     comment: "{{ item.comment | default('') }}"
     password: "{{ item.password | default('') }}"
-    home: "{{ item.home | default('/home/item.name') }}"
+    home: "{{ item.home | default('/home/{{ item.name }}') }}"
   with_items: "{{ user_management }}"
   loop_control:
     label: "{{ item.name }}"
